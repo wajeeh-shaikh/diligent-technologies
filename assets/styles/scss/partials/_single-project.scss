@@ -1,0 +1,93 @@
+.entry-content {
+  .post-head.text-center.service-detail {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+    }
+  }
+}
+
+.project-overview {
+
+  .project-overview-slider {
+    overflow-x: hidden;
+    margin-bottom: 55px;
+    position: relative;
+    padding-top: 70px;
+
+    @include media-breakpoint-down(lg) {
+      padding-left: 15px;
+    }
+    
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+      padding-bottom: 60px;
+      margin-bottom: 35px;
+    }
+
+    .swiper-slide {
+
+      img {
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        object-position: left top;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .slider-nav-btns {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: absolute;
+      right: 15px;
+      top: 0;
+
+      @include media-breakpoint-down(sm) {
+        right: auto;
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      .slider-nav-btn {
+        @include transition-standard;
+        background-color: $brand-primary;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        position: static;
+        margin: 0;
+
+        &:after {
+          font-family: "Font Awesome 6 Free";
+          font-weight: 600;
+          color: #000;
+          font-size: 16px;
+          line-height: normal;
+        }
+      }
+
+      .swiper-button-next {
+        margin-left: 20px;
+
+        &:after {
+          content: "\f061";
+        }
+      }
+
+      .swiper-button-prev {
+
+        &:after {
+          content: "\f060";
+        }
+      }
+    }
+  }
+}

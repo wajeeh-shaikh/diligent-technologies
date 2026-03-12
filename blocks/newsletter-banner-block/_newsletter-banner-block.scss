@@ -1,0 +1,38 @@
+// seo page newletter
+.Seo-page{
+    .inner{
+        flex-flow: column;
+        text-align: center;
+        padding: 60px;
+        @include media-breakpoint-down(md) {
+            padding: 60px 30px;
+        }
+        .banner-text{
+            width: 100%;
+            max-width: 100%;
+            h2{
+                @include font-format(35px, 1.2);
+                margin-bottom: 10px;
+                @include media-breakpoint-up(xxl) {
+                    @include font-format(65px, 1.2);
+
+                }
+            }
+        }
+        .banner-cta{
+            align-self: center;
+            margin-top: 20px;
+           
+            a{
+                padding: 5px 25px;
+                text-decoration: underline;
+                letter-spacing: 0.8px;
+                color: #fbff29;
+                &::after{
+                    display: none;
+                }
+               
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+section.seo-reviews {
+    .inner{
+        background: #fbff29;
+        @include media-breakpoint-down(lg) {
+            width: max-content;
+            margin: 0 auto;
+        }
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
+        p{
+            margin-bottom: 0;
+            color: #000;
+        }
+    }
+   
+  
+  
+
+}

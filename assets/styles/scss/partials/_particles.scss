@@ -1,0 +1,25 @@
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+.inner-particles {
+  z-index: 1;
+}
+#particles-js {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+::selection {
+  color: #000;
+  background: #fbff29;
+}

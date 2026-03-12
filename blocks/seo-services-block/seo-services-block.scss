@@ -1,0 +1,22 @@
+.seo-services{
+    .service-box {
+        transition: all 0.4s ease-out;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 25px;
+        border-radius: 16px;
+        background-color: #131213;
+        height: 100%;
+        &:hover {
+            transform: scale(1.05);
+        }
+        h4 {
+            color: #fbff29;
+            text-transform: capitalize;
+        }
+        .single-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }  
+   
+}
